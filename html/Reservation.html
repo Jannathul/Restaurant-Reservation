@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>reservation</title>
+        <style>
+            body {
+              background-image: url('../assets/reserved.webp');
+              background-position: center;
+              background-repeat: no-repeat;
+              background-attachment: fixed;  
+              background-size:cover;
+             
+              font-family: Arial, Helvetica, sans-serif;
+              margin: 0;
+            }
+              .navbar {
+            overflow: hidden;
+            background-color: rgb(255, 255, 255);
+            border-radius: 18px;
+          }
+
+          .navbar a {
+            float: left;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-family: 'Source Code Pro', monospace;
+          }
+
+          .dropdown {
+            float: left;
+            overflow: hidden;
+          }
+
+          .dropdown .dropbtn {
+            font-size: 15px;  
+            border: none;
+            outline: none;
+            color:black;
+            padding: 15px 16px;
+            background-color: inherit;
+            font-family: 'Source Code Pro', monospace;
+            margin: 0;
+            border-radius: 20px;
+          }
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: rgba(255, 255, 255, 0.356);
+            }
+
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(255, 255, 255, 0.767);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px white;
+            z-index: 1;
+            border-radius: 30px;
+          }
+
+            .dropdown-content a {
+              float: none;
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+            }
+
+            .dropdown-content a:hover {
+              background-color: white;
+            }
+
+            .dropdown:hover .dropdown-content {
+             display: block;
+            }
+        </style>
+        <body>
+        </br>
+        <div class="navbar" style="margin-left: 31%;margin-right: 31%;">
+            <a href="../home.html">Home</a>
+            <div class="dropdown">
+                  <button class="dropbtn">Menu
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="../html/Vegetarian.html">Vegetarian</a>
+                    <a href="../html/Non-Vegetarian.html">Non-Vegetarian</a>
+                    <a href="../html/Other.html">Other</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Contact
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="mailto:firdouse2000@gmail.com">Send email</a>
+                        <a href="tel:123-456-7890">Contact no</a>
+                        <a href="https://www.google.com/maps/place/Chennai,+Tamil+Nadu/@13.0474878,80.0689252,11z/data=!3m1!4b1!4m5!3m4!1s0x3a5265ea4f7d3361:0x6e61a70b6863d433!8m2!3d13.0826802!4d80.2707184">Visit us</a>
+                    </div>
+                  </div>
+              <div class="navbar">
+                      <a href="../html/About.html">About us</a>
+                  
+                <div class="navbar">
+                        <a href="../html/Reservation.html">Reservation</a>
+                    </div>
+              </div>
+      </div>
+            <div align="left" style="margin-top: 3cm;margin-left: 23cm;font-size: 18px;color:rgba(255, 255, 255, 0.822);">
+                
+                    <h1 style="color: black;">RESERVE YOUR TABLE</h1>
+                <b>Name: </b>
+                <input type="text" name="UserName" size=34 maxlength=34 value=""></br></br>
+                <b>Mail Id: </b>
+                <input type="email" name="mail" size=33 maxlength=33 value=""> </br> </br>
+                <b>Contact Number: </b>
+                <input type="tel" name="number" size=21 maxlength=21 value=""> </br> </br>
+                <b>Number of people:</b>
+                <input type="number" name="seats" size=11 maxlength=2 value=""> </br> </br>
+                <b>Date and Time:  </b>
+                <input type="datetime-local" name="seats" size=12 maxlength=5 value=""> </br> </br>
+                </div>
+                <div align="left" style="margin-left: 28cm;font-size: 20px;">
+                <input type="button" onclick="alert('YOUR TABLE IS BOOKED SUCCESSFULLY...')" value="Submit!">
+                </div>  
+            
+        </body>
+    </head>
+</html>
