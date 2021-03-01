@@ -1,2 +1,3 @@
-# Restaurant
+# Restaurant-Reservation
+Mini Project
  
